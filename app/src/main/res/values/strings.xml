@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sijuru Parkir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="heart3">
+    M8,0L320,0A8,8 0,0 1,328 8L328,320A8,8 0,0 1,320 328L8,328A8,8 0,0 1,0 320L0,8A8,8 0,0 1,8 0z
+  </string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintlayout_list_history"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_16dp"
+    android:paddingEnd="@dimen/_16dp"
+    android:paddingStart="@dimen/_16dp">
+
+    <TextView
+        android:id="@+id/textview_ticket_number_value"
+        style="@style/textview15BoldBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1234567890"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_plate_value"
+        style="@style/textview13RegularBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3dp"
+        android:text="DD 12345 HH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_ticket_number_value" />
+
+    <TextView
+        android:id="@+id/textview_first_time_value"
+        style="@style/textview13RegularBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:text="2022-02-02 10:10:10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_plate_value" />
+
+    <TextView
+        android:id="@+id/textview_price_value"
+        style="@style/textview15MediumBlack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:text="Rp 2000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_plate_value" />
+
+    <ImageView
+        android:id="@+id/imageview_vehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_motorcycle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_8dp"/>
+
+    <View
+        android:id="@+id/line_separator"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBlack0"
+        android:layout_marginTop="@dimen/_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_price_value"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

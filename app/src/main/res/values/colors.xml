@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Primary Colors-->
+    <color name="colorPrimary">#0064D2</color>
+    <color name="colorPrimaryDark">#1C313A</color>
+    <color name="textColorPrimary">#37474F</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteTransparant">#8FFFFFFF</color>
+    <color name="colorDividerTopBottom">#ECEFF1</color>
+
+    <!--Secondary Colors-->
+    <color name="colorRed">#FF355C</color>
+    <color name="colorOrange">#FF6D00</color>
+    <color name="colorGreen">#03BF51</color>
+    <color name="colorPurple">#CD00EA</color>
+
+    <!--base color app-->
+    <color name="primary">#FDB316</color>
+    <color name="primaryDark">#DB8128</color>
+    <color name="colorAccent">#03BF51</color>
+
+    <!--Monochrome Colors Blue-->
+    <color name="colorBlueMinus2">#0954A1</color>
+    <color name="colorBlueMinus1">#045CBA</color>
+    <color name="colorBlue0">#0064D2</color>
+    <color name="colorBlue0Transparent">#520064D2</color>
+    <color name="colorBluePlus1">#5296E0</color>
+    <color name="colorBluePlus2">#CCE0F6</color>
+    <color name="colorBluePlus3">#EBF3FB</color>
+    <color name="colorBluePlus4">#EBF3FA</color>
+
+    <!--Monochrome Colors Yellow-->
+    <color name="colorYellowMinus2">#B6A613</color>
+    <color name="colorYellowMinus1">#DAC109</color>
+    <color name="colorYellow0">#FEDD00</color>
+    <color name="colorYellowPlus1">#FEE852</color>
+    <color name="colorYellowPlus2">#FFF8CC</color>
+
+    <!--Monochrome Colors Black-->
+    <color name="colorBlackMinus2Transparent">#CC1C313A</color>
+    <color name="colorBlackMinus2">#1C313A</color>
+    <color name="colorBlackMinus1">#37474F</color>
+    <color name="colorBlack0">#607D8B</color>
+    <color name="colorBlack1">#90A4AE</color>
+    <color name="colorBlackPlus1">#B0BEC5</color>
+    <color name="colorBlackPlus2">#CFD8DC</color>
+
+    <!--Monochrome Colors Red-->
+    <color name="colorRedMinus2">#B63451</color>
+    <color name="colorRedMinus1">#DB3457</color>
+    <color name="colorRed0">#FF355C</color>
+    <color name="colorRedPlus1">#FF7690</color>
+    <color name="colorRedPlus2">#FFD7DE</color>
+    <color name="colorRedPlus3">#C4C4C4</color>
+
+    <!--Monochrome Colors Orange-->
+    <color name="colorOrangeMinus2">#B65A13</color>
+    <color name="colorOrangeMinus1">#DB6309</color>
+    <color name="colorOrange0">#FF6D00</color>
+    <color name="colorOrangePlus1">#FF9C52</color>
+    <color name="colorOrangePlus2">#FFE2CC</color>
+
+    <!--Monochrome Colors Green-->
+    <color name="colorGreenMinus2">#0B924A</color>
+    <color name="colorGreenMinus1">#07A84D</color>
+    <color name="colorGreen0">#03BF51</color>
+    <color name="colorGreenPlus1">#54D389</color>
+    <color name="colorGreenPlus2">#CDF2DC</color>
+
+    <!--Monochrome Colors Purple-->
+    <color name="colorPurpleMinus2">#9410B2</color>
+    <color name="colorPurpleMinus1">#B108CE</color>
+    <color name="colorPurple0">#CD00EA</color>
+    <color name="colorPurplePlus1">#DD52F1</color>
+    <color name="colorPurplePlus2">#F5CCFB</color>
+
+    <!--Transparent-->
+    <color name="colorRedTrans12">#1FFF355C</color>
+    <color name="colorBlueTrans12">#1F0064D2</color>
+    <color name="colorWhiteTrans12">#1FFFFFFF</color>
+    <color name="colorWhiteTrans56">#8FFFFFFF</color>
+</resources>

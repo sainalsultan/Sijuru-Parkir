@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.sijuru.splashscreen.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.sijuru.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.sijuru.main_menu.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_mainMenuFragment_to_dialogInputVehicle"
+            app:destination="@id/dialogInputVehicle" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/mainMenuFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_dialogVehicleFragment"
+            app:destination="@id/dialogVehicleFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_progressiveScanBarcodeFragment"
+            app:destination="@id/progressiveScanBarcodeFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/dialogInputVehicle"
+        android:name="com.sijuru.main_menu.DialogInputVehicle"
+        android:label="DialogInputVehicle">
+        <action
+            android:id="@+id/action_dialogInputVehicle_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+        <action
+            android:id="@+id/action_dialogInputVehicle_to_progressiveReceiptFragment"
+            app:destination="@id/progressiveReceiptFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/receiptFragment"
+        android:name="com.sijuru.receipt.ReceiptFragment"
+        android:label="fragment_receipt"
+        tools:layout="@layout/fragment_receipt">
+        <action
+            android:id="@+id/action_receiptFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.sijuru.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dialogVehicleFragment"
+        android:name="com.sijuru.DialogVehicleFragment"
+        android:label="fragment_dialog_vehicle"
+        tools:layout="@layout/fragment_dialog_vehicle" />
+    <fragment
+        android:id="@+id/progressiveReceiptFragment"
+        android:name="com.sijuru.receipt_progressive.ProgressiveReceiptFragment"
+        android:label="fragment_progressive_receipt"
+        tools:layout="@layout/fragment_progressive_receipt" />
+    <fragment
+        android:id="@+id/progressiveScanBarcodeFragment"
+        android:name="com.sijuru.scan_barcode.ProgressiveScanBarcodeFragment"
+        android:label="fragment_progressive_scan_barcode"
+        tools:layout="@layout/fragment_progressive_scan_barcode" >
+        <action
+            android:id="@+id/action_progressiveScanBarcodeFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+    </fragment>
+</navigation>

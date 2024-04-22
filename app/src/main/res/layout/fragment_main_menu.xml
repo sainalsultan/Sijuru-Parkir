@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout_main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="false"
+    tools:context=".main_menu.MainMenuFragment">
+
+    <TextureView
+        android:id="@+id/textureview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_72dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageview_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/imagebutton_flash"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@drawable/bg_rounded_white"
+        android:src="@drawable/ic_flash_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imageview_bg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:translationY="-16dp"
+        android:background="@drawable/bg_rounded_white_half_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:itemCount="4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/button_6"
+            tools:listitem="@layout/item_list_button" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:background="@drawable/selector_button_red_white"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textAppearance="@style/textview17BoldBlack"
+            android:textColor="@drawable/selector_text_white_orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Kendaraan Keluar" />
+
+        <!--<Button
+            android:id="@+id/button_1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:background="@drawable/selector_button_orange_white"
+            android:textAllCaps="true"
+            android:textAppearance="@style/textview17BoldBlack"
+            android:textColor="@drawable/selector_text_white_orange"
+            app:layout_constraintEnd_toStartOf="@+id/button_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Motor" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52dp"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:background="@drawable/selector_button_orange_white"
+            android:textAllCaps="true"
+            android:textAppearance="@style/textview17BoldBlack"
+            android:textColor="@drawable/selector_text_white_orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Mobil" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52dp"
+            android:layout_margin="@dimen/_16dp"
+            android:background="@drawable/selector_button_orange_white"
+            android:textAllCaps="true"
+            android:textAppearance="@style/textview17BoldBlack"
+            app:layout_constraintBottom_toTopOf="@+id/button_5"
+            android:textColor="@drawable/selector_text_white_orange"
+            app:layout_constraintEnd_toStartOf="@+id/button_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_1"
+            tools:text="Bentor" />
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:background="@drawable/selector_button_orange_white"
+            android:textAllCaps="true"
+            android:textAppearance="@style/textview17BoldBlack"
+            android:textColor="@drawable/selector_text_white_orange"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_3"
+            app:layout_constraintTop_toBottomOf="@+id/button_1"
+            tools:text="Truk" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:background="@drawable/selector_button_orange_white"
+            android:textAllCaps="true"
+            android:textAppearance="@style/textview17BoldBlack"
+            android:textColor="@drawable/selector_text_white_orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Lainnnya" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_52dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:background="@drawable/selector_button_red_white"
+            android:textAllCaps="true"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textAppearance="@style/textview17BoldBlack"
+            android:textColor="@drawable/selector_text_white_orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Kendaraan Keluar" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="80dp" />
+
+    <include layout="@layout/toolbar_with_title" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintlayout_detail_list"
+        android:layout_width="@dimen/_150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:background="@drawable/bg_rounded_border_black"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_horizontal_top">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_detail_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_detail_list" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
